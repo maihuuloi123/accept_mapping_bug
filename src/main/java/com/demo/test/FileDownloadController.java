@@ -11,7 +11,7 @@ public class FileDownloadController
 {
 
   @RequestMapping(value = "/download", method = RequestMethod.GET, produces = { MediaType.APPLICATION_OCTET_STREAM_VALUE, MediaType.APPLICATION_JSON_VALUE})
-  public Resource getPaymentAttachment() throws java.io.FileNotFoundException, FileNotFoundException {
+  public Resource getPaymentAttachment() throws FileNotFoundException {
     if(1==1){
       throw new FileNotFoundException("Test Exception!!!");
     }
